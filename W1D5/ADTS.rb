@@ -80,8 +80,17 @@ class Map
   end
   def show
     # returns, but doesn't remove
-
   end
+
+  # def show
+  #   deep_dup(@arr)
+  # end
+  #
+  # private
+  #
+  # def deep_dup(arr)
+  #   arr.map { |el| el.is_a?(Array) ? deep_dup(el) : el }
+  # end
 end
 
 mp = Map.new
@@ -90,3 +99,4 @@ mp.set(4,5)
 mp.set(7,8)
 p mp.get(4)
 mp.delete(4)
+mp.show
