@@ -89,6 +89,7 @@ describe Board do
 
     context "when the turn ended on an empty cup" do
       it "returns :switch" do
+        p "---000000000000000----"
         expect(board.make_move(10, "James")).to eq(:switch)
       end
     end
